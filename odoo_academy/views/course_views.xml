@@ -9,19 +9,19 @@
                     <sheet>
                         <h1><field name="name"/></h1>
                         <group>
-                            <group>
+                          <!--  <group>
                                 <field name="active"/>
                                 <field name="level"/>
-                            </group>
+                            </group> -->
                             <group>
-                                <field name="base_price"/>
+                                <field name="base_price"/> 
                                 <field name="additional_fee"/>
                                 <field name="total_price" force_save="1"/>
                             </group>
                         </group>
                         <notebook>
-                            <page string="Description">
-                                <field name="description"/>
+                            <page string="Sessions">
+                                <field name="session_ids"/>
                             </page>
                         </notebook>
                     </sheet>
@@ -35,8 +35,8 @@
             <field name="arch" type="xml">
                 <tree string="Course List">
                     <field name="name"/>
-                    <field name="description"/>
-                    <field name="level"/>
+                    <field name="descripcion"/>
+                    <!--<field name="level"/> -->
                 </tree>
             </field>
         </record>
@@ -47,7 +47,7 @@
             <field name="arch" type="xml">
                 <search>
                     <field name="name"/>
-                    <field name="description"/>
+                    <field name="descripcion"/>
                 </search>
             </field>
         </record>
@@ -57,7 +57,7 @@
             <field name="model">academy.course</field>
             <field name="arch" type="xml">
                 <pivot>
-                    <field name="level" type="row"/>
+                    <!--<field name="level" type="row"/>-->
                     <field name="name" type="row"/>
                     <field name="base_price" type="measure"/>
                     <field name="additional_fee" type="measure"/>
@@ -67,3 +67,4 @@
         </record>
     </data>
 </odoo>
+
