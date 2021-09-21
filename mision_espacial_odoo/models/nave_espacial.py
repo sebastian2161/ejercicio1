@@ -18,6 +18,10 @@ class nave_espacial(models.Model):
     #Largo por defecto = 0
     largo = fields.Float(string='Largo', default =0.00)
     
+    mision_ids = fields.One2many(comodel_name='mision.mision_espacial',
+                                  inverse_name='nave_espacial_id',
+                                  string='Mision')
+    
     
     
     @api.constrains('ancho','largo')

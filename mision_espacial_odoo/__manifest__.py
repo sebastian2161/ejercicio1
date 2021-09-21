@@ -19,6 +19,7 @@
         'security/ir.model.access.csv',
         'views/nave_menuitems.xml',
         'views/nave_view.xml',
+        'views/mision_view.xml',
     ],
     'demo': [
         'demo/mision_espacial.xml',

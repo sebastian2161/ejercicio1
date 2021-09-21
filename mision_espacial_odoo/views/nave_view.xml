@@ -19,11 +19,16 @@
                                 <field name="largo"/>
                             </group> 
                         </group> 
-                        <!--<notebook>
+                        <notebook>
                             <page string="descripcion">
                                 <field name="descripcion"/>
                             </page>
-                        </notebook> -->
+                            
+                            <page string="Misions">
+                                <field name="mision_ids"/>
+                            </page>
+                            
+                        </notebook>
                     </sheet>
                 </form>
             </field>
@@ -52,6 +57,21 @@
                 </search>
             </field>
         </record>
+        
+        <record model="ir.ui.view" id="nave_view_pivot">
+            <field name="name">mision.nave_espacial.pivot</field>
+            <field name="model">mision.nave_espacial</field>
+            <field name="arch" type="xml">
+                <pivot>
+                    <!--<field name="level" type="row"/>-->
+                    <field name="name" type="row"/>
+                    <field name="ancho" type="measure"/>
+                    <field name="largo" type="measure"/>
+                </pivot>
+            </field>
+        </record>
+        
+        
         
         
     </data>
