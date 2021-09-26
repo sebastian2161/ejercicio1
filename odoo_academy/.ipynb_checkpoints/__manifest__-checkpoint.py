@@ -32,3 +32,4 @@
 # Manifiesto de hoy 22-09-2021
 # Manifiesto de hoy 23-09-2021
 # Manifiesto de hoy 24-09-2021
+# Manifiesto de hoy 25-09-2021
